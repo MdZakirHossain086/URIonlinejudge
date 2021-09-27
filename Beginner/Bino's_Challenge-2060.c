@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,num,c=0,d=0,e=0,f=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&num);
+        if(num%2==0)
+            c++;
+        if(num%3==0)
+            d++;
+        if(num%4==0)
+            e++;
+        if(num%5==0)
+            f++;
+    }
+    printf("%d Multiplo(s) de 2\n",c);
+    printf("%d Multiplo(s) de 3\n",d);
+    printf("%d Multiplo(s) de 4\n",e);
+    printf("%d Multiplo(s) de 5\n",f);
+
+    return 0;
+
+}
